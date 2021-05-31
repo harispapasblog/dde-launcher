@@ -156,9 +156,8 @@ void MenuWorker::showMenuByAppItem(QPoint pos, const QModelIndex &index) {
 
 void MenuWorker::handleOpen()
 {
-    m_appManager->launchApp(m_currentModelIndex);
-
     emit appLaunched();
+    m_appManager->launchApp(m_currentModelIndex);
 }
 
 void MenuWorker::handleMenuClosed()
